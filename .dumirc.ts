@@ -2,8 +2,11 @@ import { defineConfig } from 'dumi';
 
 export default defineConfig({
   outputPath: 'docs-dist',
+  resolve: {
+    atomDirs: [{ type: 'component', dir: 'src/components' }],
+  },
   themeConfig: {
-    name: '组件库',
+    name: 'UI库',
     footer: 'Powered by 924361501@qq.com',
     // 配置高清方案，默认为 750 高清方案
     hd: {

@@ -1,14 +1,4 @@
----
-nav:
-  title: 组件
-  order: 1
----
-
-# Button
-
-This is an Button component.
-
-```jsx
+import React from 'react';
 import { Button } from 'rc-component';
 
 export default () => (
@@ -28,4 +18,3 @@ export default () => (
     </Button>
   </>
 );
-```
