@@ -18,13 +18,13 @@ nav:
 
 ## 属性
 
-| 属性      | 说明             | 类型                                                         | 默认值    |
-| --------- | ---------------- | ------------------------------------------------------------ | --------- |
-| type      | 设置按钮类型     | `'primary' \| 'dashed' \| 'link'   \| 'text'   \| 'default'` | 'default' |
-| size      | 设置按钮大小     | `'small' \| 'medium'  \| 'large'`                            | 'medium'  |
-| className | 语义化结构 class | -                                                            | -         |
-| style     | 语义化结构 style | -                                                            | -         |
-| onClick   | 点击按钮时的回调 | `React.MouseEventHandler<HTMLButtonElement>`                 | -         |
+| 属性      | 说明             | 类型                                               | 默认值  |
+| --------- | ---------------- | -------------------------------------------------- | ------- |
+| type      | 设置按钮类型     | `primary \| dashed \| link   \| text   \| default` | default |
+| size      | 设置按钮大小     | `small \| medium  \| large`                        | medium  |
+| className | 语义化结构 class | -                                                  | -       |
+| style     | 语义化结构 style | -                                                  | -       |
+| onClick   | 点击按钮时的回调 | `React.MouseEventHandler<HTMLButtonElement>`       | -       |
 
 此外，还支持原生 `button` 元素的以下属性：`onMouseDown` `onMouseUp` `onTouchStart` `onTouchEnd`。
 

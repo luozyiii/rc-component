@@ -2,6 +2,9 @@
 nav:
   title: 设计
   order: 0
+group:
+  title: 色彩
+  order: 0
 mobile: false
 ---
 
