@@ -1,5 +1,6 @@
 import React, { type FC } from 'react';
 import classnames from 'classnames';
+import './style.scss';
 
 export interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;

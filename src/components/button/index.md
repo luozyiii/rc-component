@@ -28,8 +28,6 @@ nav:
 
 此外，还支持原生 `button` 元素的以下属性：`onMouseDown` `onMouseUp` `onTouchStart` `onTouchEnd`。
 
-## 调色版
-
 ## CSS 变量
 
 | 属性               | 说明     | 默认值                        | 全局变量                        |
@@ -40,3 +38,5 @@ nav:
 | --border-style     | 边框样式 | `solid`                       | `--adm-button-border-style`     |
 | --border-width     | 边框宽度 | `1px`                         | `--adm-button-border-width`     |
 | --text-color       | 文字颜色 | `var(--adm-color-text)`       | `--adm-button-text-color`       |
+
+## [色彩](/design/button)
