@@ -1,13 +1,14 @@
 // css 变量生成脚本
 const fs = require('fs');
-const ctrlTinycolor = require('@ctrl/tinycolor');
 const sass = require('node-sass');
+
+const themeObj = {};
 
 const generateTheme = (name, colors) => {
   return colors
     ?.map((color, index) => {
-      const _color = new ctrlTinycolor.TinyColor(color).toHexString();
-      return `--${name}-${index + 1}: ${_color};`;
+      themeObj[`--${name}-${index + 1}`] = color;
+      return `--${name}-${index + 1}: ${color};`;
     })
     .join('');
 };
@@ -102,3 +103,11 @@ const result = sass.renderSync({
 
 // 将样式写入 SCSS 文件
 fs.writeFileSync('src/styles/theme-default.scss', result.css.toString());
+
+// 生成ts
+const result2 = `
+const variable: any = ${JSON.stringify(themeObj, null, 2)}
+export default variable;
+`;
+// 生成 JS 配置文件
+fs.writeFileSync('src/styles/theme-variable.ts', result2);

@@ -1,0 +1,9 @@
+{
+  "src/components/button/style.scss": [
+    "--text-1",
+    "--line-3",
+    "--fill-4",
+    "--brand-1",
+    "--line-1"
+  ]
+}
