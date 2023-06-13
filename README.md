@@ -5,9 +5,9 @@
 
 A react library developed with dumi
 
-## Usage
+## Docs
 
-TODO
+https://luozyiii.github.io/rc-component
 
 ## Options
 

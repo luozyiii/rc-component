@@ -2,6 +2,8 @@ import { defineConfig } from 'dumi';
 
 export default defineConfig({
   outputPath: 'docs-dist',
+  base: '/rc-component/',
+  publicPath: '/rc-component/',
   resolve: {
     atomDirs: [{ type: 'component', dir: 'src/components' }],
   },
