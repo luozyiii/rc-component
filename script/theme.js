@@ -101,8 +101,8 @@ const result = sass.renderSync({
   `,
 });
 
-// 将样式写入 SCSS 文件
-fs.writeFileSync('src/styles/theme-default.scss', result.css.toString());
+// 将样式写入 CSS 文件
+fs.writeFileSync('src/styles/theme-default.css', result.css.toString());
 
 // 生成ts
 const result2 = `

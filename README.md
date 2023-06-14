@@ -9,6 +9,17 @@ A react library developed with dumi
 
 https://luozyiii.github.io/rc-component
 
+```bash
+# 手动部署
+
+# package.json 升级一下版本号
+# 构建 docs
+npm run docs:build
+
+# 部署
+npm run deploy
+```
+
 ## Options
 
 TODO
