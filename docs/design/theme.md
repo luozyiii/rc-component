@@ -15,15 +15,10 @@ mobile: false
 ```jsx
 import React from 'react';
 import { Palette } from 'rc-component';
-import { generateTheme } from 'rc-component/styles';
+import { generateTheme, themeColor } from '@leslies/css';
 
-const colorsData = generateTheme('brand', [
-  '#502CE2',
-  '#4023B5',
-  '#301A88',
-  '#D5D6DA',
-  '#EAEAFC',
-]);
+const colorKey = 'brand';
+const colorsData = generateTheme(colorKey, themeColor[colorKey]);
 export default () => <Palette data={colorsData} />;
 ```
 
@@ -32,16 +27,10 @@ export default () => <Palette data={colorsData} />;
 ```jsx
 import React from 'react';
 import { Palette } from 'rc-component';
-import { generateTheme } from 'rc-component/styles';
+import { generateTheme, themeColor } from '@leslies/css';
 
-const colorsData = generateTheme('danger', [
-  '#FA3B29',
-  '#E33323',
-  '#CA2E1F',
-  '#FEB0A9',
-  '#FED7D4',
-  '#FFECEB',
-]);
+const colorKey = 'danger';
+const colorsData = generateTheme(colorKey, themeColor[colorKey]);
 export default () => <Palette data={colorsData} />;
 ```
 
@@ -50,16 +39,10 @@ export default () => <Palette data={colorsData} />;
 ```jsx
 import React from 'react';
 import { Palette } from 'rc-component';
-import { generateTheme } from 'rc-component/styles';
+import { generateTheme, themeColor } from '@leslies/css';
 
-const colorsData = generateTheme('warning', [
-  '#FA6F1E',
-  '#D55E1A',
-  '#AF4E15',
-  '#FDD8A5',
-  '#FEECD2',
-  '#FFF9F0',
-]);
+const colorKey = 'warning';
+const colorsData = generateTheme(colorKey, themeColor[colorKey]);
 export default () => <Palette data={colorsData} />;
 ```
 
@@ -68,16 +51,10 @@ export default () => <Palette data={colorsData} />;
 ```jsx
 import React from 'react';
 import { Palette } from 'rc-component';
-import { generateTheme } from 'rc-component/styles';
+import { generateTheme, themeColor } from '@leslies/css';
 
-const colorsData = generateTheme('caution', [
-  '#FFD200',
-  '#D5B300',
-  '#AA9200',
-  '#FFF799',
-  '#FFFDCC',
-  '#FFFEEB',
-]);
+const colorKey = 'caution';
+const colorsData = generateTheme(colorKey, themeColor[colorKey]);
 export default () => <Palette data={colorsData} />;
 ```
 
@@ -86,16 +63,10 @@ export default () => <Palette data={colorsData} />;
 ```jsx
 import React from 'react';
 import { Palette } from 'rc-component';
-import { generateTheme } from 'rc-component/styles';
+import { generateTheme, themeColor } from '@leslies/css';
 
-const colorsData = generateTheme('success', [
-  '#1AC14F',
-  '#16A443',
-  '#128737',
-  '#A3E6B9',
-  '#D1F3DC',
-  '#E8F9ED',
-]);
+const colorKey = 'success';
+const colorsData = generateTheme(colorKey, themeColor[colorKey]);
 export default () => <Palette data={colorsData} />;
 ```
 
@@ -104,16 +75,10 @@ export default () => <Palette data={colorsData} />;
 ```jsx
 import React from 'react';
 import { Palette } from 'rc-component';
-import { generateTheme } from 'rc-component/styles';
+import { generateTheme, themeColor } from '@leslies/css';
 
-const colorsData = generateTheme('tip', [
-  '#0077FC',
-  '#0063D8',
-  '#004FB5',
-  '#98CDFE',
-  '#CCE7FE',
-  '#EAF5FF',
-]);
+const colorKey = 'tip';
+const colorsData = generateTheme(colorKey, themeColor[colorKey]);
 export default () => <Palette data={colorsData} />;
 ```
 
@@ -122,16 +87,10 @@ export default () => <Palette data={colorsData} />;
 ```jsx
 import React from 'react';
 import { Palette } from 'rc-component';
-import { generateTheme } from 'rc-component/styles';
+import { generateTheme, themeColor } from '@leslies/css';
 
-const colorsData = generateTheme('text', [
-  '#181A31',
-  'rgba(24, 26, 49, 0.8)',
-  'rgba(24, 26, 49, 0.6)',
-  'rgba(24, 26, 49, 0.35)',
-  '#FD5900',
-  '#0077FC',
-]);
+const colorKey = 'text';
+const colorsData = generateTheme(colorKey, themeColor[colorKey]);
 export default () => <Palette data={colorsData} />;
 ```
 
@@ -140,15 +99,10 @@ export default () => <Palette data={colorsData} />;
 ```jsx
 import React from 'react';
 import { Palette } from 'rc-component';
-import { generateTheme } from 'rc-component/styles';
+import { generateTheme, themeColor } from '@leslies/css';
 
-const colorsData = generateTheme('fill', [
-  '#F8F8F9',
-  '#F2F3F5',
-  '#DFDFE0',
-  '#FFFFFF',
-  'rgba(24, 26, 49, 0.6)',
-]);
+const colorKey = 'fill';
+const colorsData = generateTheme(colorKey, themeColor[colorKey]);
 export default () => <Palette data={colorsData} />;
 ```
 
@@ -157,12 +111,9 @@ export default () => <Palette data={colorsData} />;
 ```jsx
 import React from 'react';
 import { Palette } from 'rc-component';
-import { generateTheme } from 'rc-component/styles';
+import { generateTheme, themeColor } from '@leslies/css';
 
-const colorsData = generateTheme('line', [
-  'rgba(24, 26, 49, 0.1)',
-  'rgba(24, 26, 49, 0.18)',
-  '#EBEDF0',
-]);
+const colorKey = 'line';
+const colorsData = generateTheme(colorKey, themeColor[colorKey]);
 export default () => <Palette data={colorsData} />;
 ```

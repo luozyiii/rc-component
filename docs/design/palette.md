@@ -17,9 +17,9 @@ mobile: false
 ```jsx
 import React from 'react';
 import { Palette } from 'rc-component';
-import { red } from 'rc-component/styles';
+import { red } from '@leslies/css';
 
-const data = red.map((item, index) => {
+const data = red?.map((item, index) => {
   return {
     name: `red-${index + 1}`,
     value: item,
@@ -36,7 +36,7 @@ export default () => <Palette data={data} />;
 ```jsx
 import React from 'react';
 import { Palette } from 'rc-component';
-import { volcano } from 'rc-component/styles';
+import { volcano } from '@leslies/css';
 
 const data = volcano.map((item, index) => {
   return {
@@ -55,7 +55,7 @@ export default () => <Palette data={data} />;
 ```jsx
 import React from 'react';
 import { Palette } from 'rc-component';
-import { orange } from 'rc-component/styles';
+import { orange } from '@leslies/css';
 
 const data = orange.map((item, index) => {
   return {
@@ -74,7 +74,7 @@ export default () => <Palette data={data} />;
 ```jsx
 import React from 'react';
 import { Palette } from 'rc-component';
-import { yellow } from 'rc-component/styles';
+import { yellow } from '@leslies/css';
 
 const data = yellow.map((item, index) => {
   return {
@@ -93,7 +93,7 @@ export default () => <Palette data={data} />;
 ```jsx
 import React from 'react';
 import { Palette } from 'rc-component';
-import { lime } from 'rc-component/styles';
+import { lime } from '@leslies/css';
 
 const data = lime.map((item, index) => {
   return {
@@ -112,7 +112,7 @@ export default () => <Palette data={data} />;
 ```jsx
 import React from 'react';
 import { Palette } from 'rc-component';
-import { green } from 'rc-component/styles';
+import { green } from '@leslies/css';
 
 const data = green.map((item, index) => {
   return {
@@ -131,7 +131,7 @@ export default () => <Palette data={data} />;
 ```jsx
 import React from 'react';
 import { Palette } from 'rc-component';
-import { cyan } from 'rc-component/styles';
+import { cyan } from '@leslies/css';
 
 const data = cyan.map((item, index) => {
   return {
@@ -150,7 +150,7 @@ export default () => <Palette data={data} />;
 ```jsx
 import React from 'react';
 import { Palette } from 'rc-component';
-import { blue } from 'rc-component/styles';
+import { blue } from '@leslies/css';
 
 const data = blue.map((item, index) => {
   return {
@@ -169,7 +169,7 @@ export default () => <Palette data={data} />;
 ```jsx
 import React from 'react';
 import { Palette } from 'rc-component';
-import { geekblue } from 'rc-component/styles';
+import { geekblue } from '@leslies/css';
 
 const data = geekblue.map((item, index) => {
   return {
@@ -188,7 +188,7 @@ export default () => <Palette data={data} />;
 ```jsx
 import React from 'react';
 import { Palette } from 'rc-component';
-import { purple } from 'rc-component/styles';
+import { purple } from '@leslies/css';
 
 const data = purple.map((item, index) => {
   return {
@@ -207,7 +207,7 @@ export default () => <Palette data={data} />;
 ```jsx
 import React from 'react';
 import { Palette } from 'rc-component';
-import { magenta } from 'rc-component/styles';
+import { magenta } from '@leslies/css';
 
 const data = magenta.map((item, index) => {
   return {
