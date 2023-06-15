@@ -15,10 +15,9 @@ mobile: false
 ```jsx
 import React from 'react';
 import { Palette, createColorData } from 'rc-component';
-import { themeColor } from '@leslies/css';
+import { brand } from '@leslies/css';
 
-const colorKey = 'brand';
-const colorsData = createColorData(colorKey, themeColor[colorKey]);
+const colorsData = createColorData('brand', brand);
 export default () => <Palette data={colorsData} />;
 ```
 
@@ -27,10 +26,9 @@ export default () => <Palette data={colorsData} />;
 ```jsx
 import React from 'react';
 import { Palette, createColorData } from 'rc-component';
-import { themeColor } from '@leslies/css';
+import { danger } from '@leslies/css';
 
-const colorKey = 'danger';
-const colorsData = createColorData(colorKey, themeColor[colorKey]);
+const colorsData = createColorData('danger', danger);
 export default () => <Palette data={colorsData} />;
 ```
 
@@ -39,10 +37,9 @@ export default () => <Palette data={colorsData} />;
 ```jsx
 import React from 'react';
 import { Palette, createColorData } from 'rc-component';
-import { themeColor } from '@leslies/css';
+import { warning } from '@leslies/css';
 
-const colorKey = 'warning';
-const colorsData = createColorData(colorKey, themeColor[colorKey]);
+const colorsData = createColorData('warning', warning);
 export default () => <Palette data={colorsData} />;
 ```
 
@@ -51,10 +48,9 @@ export default () => <Palette data={colorsData} />;
 ```jsx
 import React from 'react';
 import { Palette, createColorData } from 'rc-component';
-import { themeColor } from '@leslies/css';
+import { caution } from '@leslies/css';
 
-const colorKey = 'caution';
-const colorsData = createColorData(colorKey, themeColor[colorKey]);
+const colorsData = createColorData('caution', caution);
 export default () => <Palette data={colorsData} />;
 ```
 
@@ -63,10 +59,9 @@ export default () => <Palette data={colorsData} />;
 ```jsx
 import React from 'react';
 import { Palette, createColorData } from 'rc-component';
-import { themeColor } from '@leslies/css';
+import { success } from '@leslies/css';
 
-const colorKey = 'success';
-const colorsData = createColorData(colorKey, themeColor[colorKey]);
+const colorsData = createColorData('success', success);
 export default () => <Palette data={colorsData} />;
 ```
 
@@ -75,10 +70,9 @@ export default () => <Palette data={colorsData} />;
 ```jsx
 import React from 'react';
 import { Palette, createColorData } from 'rc-component';
-import { themeColor } from '@leslies/css';
+import { tip } from '@leslies/css';
 
-const colorKey = 'tip';
-const colorsData = createColorData(colorKey, themeColor[colorKey]);
+const colorsData = createColorData('tip', tip);
 export default () => <Palette data={colorsData} />;
 ```
 
@@ -87,10 +81,9 @@ export default () => <Palette data={colorsData} />;
 ```jsx
 import React from 'react';
 import { Palette, createColorData } from 'rc-component';
-import { themeColor } from '@leslies/css';
+import { text } from '@leslies/css';
 
-const colorKey = 'text';
-const colorsData = createColorData(colorKey, themeColor[colorKey]);
+const colorsData = createColorData('text', text);
 export default () => <Palette data={colorsData} />;
 ```
 
@@ -99,10 +92,9 @@ export default () => <Palette data={colorsData} />;
 ```jsx
 import React from 'react';
 import { Palette, createColorData } from 'rc-component';
-import { themeColor } from '@leslies/css';
+import { fill } from '@leslies/css';
 
-const colorKey = 'fill';
-const colorsData = createColorData(colorKey, themeColor[colorKey]);
+const colorsData = createColorData('fill', fill);
 export default () => <Palette data={colorsData} />;
 ```
 
@@ -111,9 +103,8 @@ export default () => <Palette data={colorsData} />;
 ```jsx
 import React from 'react';
 import { Palette, createColorData } from 'rc-component';
-import { themeColor } from '@leslies/css';
+import { line } from '@leslies/css';
 
-const colorKey = 'line';
-const colorsData = createColorData(colorKey, themeColor[colorKey]);
+const colorsData = createColorData('line', line);
 export default () => <Palette data={colorsData} />;
 ```
