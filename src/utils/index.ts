@@ -7,4 +7,13 @@ const createColorData = (name: string, colors: string[]) => {
   });
 };
 
-export { createColorData };
+const createColorData_v2 = (colors: any) => {
+  return Object.keys(colors).map((key: string) => {
+    return {
+      name: key,
+      value: colors[key],
+    };
+  });
+};
+
+export { createColorData, createColorData_v2 };
