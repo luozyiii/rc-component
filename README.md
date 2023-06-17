@@ -5,12 +5,12 @@
 
 A react library developed with dumi
 
-## Docs
+## Docs 文档
 
 https://luozyiii.github.io/rc-component
 
 ```bash
-# 手动部署
+# 手动部署文档
 
 # package.json 升级一下版本号
 # 构建 docs
@@ -20,15 +20,17 @@ npm run docs:build
 npm run deploy
 ```
 
-## Options
+## publish 发布
 
-TODO
+```bash
+# 部署 verdaccio 私域 npm
+npm publish --registry http://localhost:4873
 
-## Link
-
-- [dumi](https://d.umijs.org/guide)
-- [mobile.ant.design](https://mobile.ant.design/)
-- [ant.design](https://ant.design/)
+# 撤销
+npm unpublish --registry http://localhost:4873 --force
+# 强制撤销指定版本
+npm unpublish rc-component@0.0.1 --registry http://localhost:4873 --force
+```
 
 ## Development
 
@@ -52,6 +54,15 @@ $ npm run docs:build
 $ npm run doctor
 ```
 
+## Link 参考
+
+- [dumi](https://d.umijs.org/guide)
+- [mobile.ant.design](https://mobile.ant.design/)
+- [ant.design](https://ant.design/)
+
 ## LICENSE
 
 MIT
+
+npm publish --registry http://localhost:4873
+npm unpublish --registry http://localhost:4873 --force
