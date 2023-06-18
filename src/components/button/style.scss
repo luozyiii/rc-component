@@ -24,6 +24,11 @@ $btn-prefix: '.rc-btn';
   border-color: var(--line-3);
   background: var(--fill-4);
 
+  &-block {
+    display: block;
+    width: 100%;
+  }
+
   &-txt {
     display: block;
   }

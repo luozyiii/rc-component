@@ -20,6 +20,7 @@ nav:
 
 | 属性      | 说明             | 类型                                               | 默认值  |
 | --------- | ---------------- | -------------------------------------------------- | ------- |
+| block     | 是否是块级元素   | `boolean`                                          | false   |
 | type      | 设置按钮类型     | `primary \| dashed \| link   \| text   \| default` | default |
 | size      | 设置按钮大小     | `small \| medium  \| large`                        | medium  |
 | className | 语义化结构 class | -                                                  | -       |

@@ -9,8 +9,11 @@ export interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
   size?: 'small' | 'medium' | 'large';
   style?: React.CSSProperties;
   loading?: boolean;
+  block?: boolean;
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
 }
+
+const classPrefix = `rc-btn`;
 
 export const Button: FC<ButtonProps> = (props) => {
   const {
@@ -21,20 +24,21 @@ export const Button: FC<ButtonProps> = (props) => {
     style,
     onClick,
     loading = false,
+    block = false,
     ...other
   } = props;
 
-  const cls = classnames({
-    'rc-btn': true,
-    [`rc-btn-${type}`]: type,
-    [`rc-btn-${size}`]: ['small', 'large'].includes(size),
+  const cls = classnames(classPrefix, {
+    [`${classPrefix}-${type}`]: type,
+    [`${classPrefix}-block`]: block,
+    [`${classPrefix}-${size}`]: ['small', 'large'].includes(size),
     [className as string]: !!className,
   });
 
   const loadingCls = classnames({
-    'rc-btn-loading': true,
-    [`rc-btn-${type}-loading`]: type,
-    [`rc-btn-${size}-loading`]: size,
+    [`${classPrefix}-loading`]: true,
+    [`${classPrefix}-${type}-loading`]: type,
+    [`${classPrefix}-${size}-loading`]: size,
   });
 
   return (
