@@ -23,9 +23,9 @@ export const Button: FC<ButtonProps> = (props) => {
   } = props;
 
   const cls = classnames({
-    'ant-btn': true,
-    [`ant-btn-${type}`]: type,
-    [`ant-btn-${size}`]: ['small', 'large'].includes(size),
+    'rc-btn': true,
+    [`rc-btn-${type}`]: type,
+    [`rc-btn-${size}`]: ['small', 'large'].includes(size),
     [className as string]: !!className,
   });
 

@@ -12,7 +12,7 @@ export const Palette: FC<PaletteProps> = (props) => {
   const { className, style, data, ...other } = props;
 
   const cls = classnames({
-    'ant-palette': true,
+    'rc-palette': true,
     [className as string]: !!className,
   });
 

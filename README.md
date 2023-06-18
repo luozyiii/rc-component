@@ -20,6 +20,16 @@ npm run docs:build
 npm run deploy
 ```
 
+## 标准
+
+### 样式命名
+
+- 前缀 【.rc-】
+
+```scss
+$btn-prefix: '.rc-btn';
+```
+
 ## publish 发布
 
 ```bash
