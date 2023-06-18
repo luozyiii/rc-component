@@ -1,9 +1,8 @@
 $btn-prefix: '.rc-btn';
 
 #{$btn-prefix} {
-  line-height: 1.5715;
-  position: relative;
-  display: inline-block;
+  display: flex;
+  align-items: center;
   font-weight: 400;
   white-space: nowrap;
   text-align: center;
@@ -18,12 +17,29 @@ $btn-prefix: '.rc-btn';
   user-select: none;
   touch-action: manipulation;
   height: 32px;
-  padding: 4px 15px;
+  padding: 0 10px;
   font-size: 14px;
   border-radius: 2px;
   color: var(--text-1);
   border-color: var(--line-3);
   background: var(--fill-4);
+
+  &-txt {
+    display: block;
+  }
+
+  &-loading {
+    display: block;
+    width: 14px;
+    height: 14px;
+    margin-right: 6px;
+    border: 2px solid var(--text-1);
+    border-top-color: var(--line-3);
+    border-right-color: var(--line-3);
+    border-bottom-color: var(--line-3);
+    border-radius: 100%;
+    animation: circle infinite 0.75s linear;
+  }
 
   &-primary {
     color: var(--fill-4);
@@ -31,6 +47,13 @@ $btn-prefix: '.rc-btn';
     background: var(--brand-1);
     text-shadow: var(--line-1);
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+
+    &-loading {
+      border: 2px solid var(--fill-4);
+      border-top-color: var(--line-1);
+      border-right-color: var(--line-1);
+      border-bottom-color: var(--line-1);
+    }
   }
 
   &-link {
@@ -38,6 +61,12 @@ $btn-prefix: '.rc-btn';
     border-color: transparent;
     background: transparent;
     box-shadow: none;
+    &-loading {
+      border: 2px solid var(--brand-1);
+      border-top-color: var(--line-1);
+      border-right-color: var(--line-1);
+      border-bottom-color: var(--line-1);
+    }
   }
 
   &-dashed {
@@ -59,6 +88,10 @@ $btn-prefix: '.rc-btn';
     padding: 6.4px 15px;
     font-size: 16px;
     border-radius: 2px;
+    &-loading {
+      width: 16px;
+      height: 16px;
+    }
   }
 
   &-small {
@@ -66,5 +99,17 @@ $btn-prefix: '.rc-btn';
     padding: 0px 7px;
     font-size: 14px;
     border-radius: 2px;
+    &-loading {
+      width: 12px;
+      height: 12px;
+    }
+  }
+}
+@keyframes circle {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

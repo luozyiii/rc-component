@@ -8,6 +8,7 @@ export interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
   type?: 'primary' | 'dashed' | 'link' | 'text' | 'default';
   size?: 'small' | 'medium' | 'large';
   style?: React.CSSProperties;
+  loading?: boolean;
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
 }
 
@@ -19,6 +20,7 @@ export const Button: FC<ButtonProps> = (props) => {
     size = 'medium',
     style,
     onClick,
+    loading = false,
     ...other
   } = props;
 
@@ -29,6 +31,12 @@ export const Button: FC<ButtonProps> = (props) => {
     [className as string]: !!className,
   });
 
+  const loadingCls = classnames({
+    'rc-btn-loading': true,
+    [`rc-btn-${type}-loading`]: type,
+    [`rc-btn-${size}-loading`]: size,
+  });
+
   return (
     <button
       {...other}
@@ -37,7 +45,8 @@ export const Button: FC<ButtonProps> = (props) => {
       onClick={onClick}
       type="button"
     >
-      {children}
+      {loading && <i className={loadingCls}></i>}
+      <span className="rc-btn-txt">{children}</span>
     </button>
   );
 };
