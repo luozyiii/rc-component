@@ -14,7 +14,7 @@ mobile: false
 
 ```jsx
 import React from 'react';
-import { Palette, createColorData_v2 } from 'rc-component';
+import { Palette, createColorData_v2 } from '@leslies/rc-component';
 import { dominant_v2 } from '@leslies/css';
 
 const colorsData = createColorData_v2(dominant_v2);
@@ -25,7 +25,7 @@ export default () => <Palette data={colorsData} />;
 
 ```jsx
 import React from 'react';
-import { Palette, createColorData_v2 } from 'rc-component';
+import { Palette, createColorData_v2 } from '@leslies/rc-component';
 import { gradient_v2 } from '@leslies/css';
 
 const colorsData = createColorData_v2(gradient_v2);
@@ -36,7 +36,7 @@ export default () => <Palette data={colorsData} />;
 
 ```jsx
 import React from 'react';
-import { Palette, createColorData_v2 } from 'rc-component';
+import { Palette, createColorData_v2 } from '@leslies/rc-component';
 import { auxiliary_v2 } from '@leslies/css';
 
 const colorsData = createColorData_v2(auxiliary_v2);
@@ -47,7 +47,7 @@ export default () => <Palette data={colorsData} />;
 
 ```jsx
 import React from 'react';
-import { Palette, createColorData_v2 } from 'rc-component';
+import { Palette, createColorData_v2 } from '@leslies/rc-component';
 import { text_v2 } from '@leslies/css';
 
 const colorsData = createColorData_v2(text_v2);
@@ -58,7 +58,7 @@ export default () => <Palette data={colorsData} />;
 
 ```jsx
 import React from 'react';
-import { Palette, createColorData_v2 } from 'rc-component';
+import { Palette, createColorData_v2 } from '@leslies/rc-component';
 import { neutral_v2 } from '@leslies/css';
 
 const colorsData = createColorData_v2(neutral_v2);
@@ -69,7 +69,7 @@ export default () => <Palette data={colorsData} />;
 
 ```jsx
 import React from 'react';
-import { Palette, createColorData_v2 } from 'rc-component';
+import { Palette, createColorData_v2 } from '@leslies/rc-component';
 import { line_v2 } from '@leslies/css';
 
 const colorsData = createColorData_v2(line_v2);

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Color } from 'rc-component';
+import { Color } from '@leslies/rc-component';
 
 export default () => (
   <Color

@@ -16,7 +16,7 @@ mobile: false
 
 ```jsx
 import React from 'react';
-import { Palette, createColorData } from 'rc-component';
+import { Palette, createColorData } from '@leslies/rc-component';
 import { red } from '@leslies/css';
 
 const colorKey = 'red';
@@ -30,7 +30,7 @@ export default () => <Palette data={colorsData} />;
 
 ```jsx
 import React from 'react';
-import { Palette, createColorData } from 'rc-component';
+import { Palette, createColorData } from '@leslies/rc-component';
 import { volcano } from '@leslies/css';
 
 const colorKey = 'volcano';
@@ -44,7 +44,7 @@ export default () => <Palette data={colorsData} />;
 
 ```jsx
 import React from 'react';
-import { Palette, createColorData } from 'rc-component';
+import { Palette, createColorData } from '@leslies/rc-component';
 import { orange } from '@leslies/css';
 
 const colorKey = 'orange';
@@ -58,7 +58,7 @@ export default () => <Palette data={colorsData} />;
 
 ```jsx
 import React from 'react';
-import { Palette, createColorData } from 'rc-component';
+import { Palette, createColorData } from '@leslies/rc-component';
 import { yellow } from '@leslies/css';
 
 const colorKey = 'yellow';
@@ -72,7 +72,7 @@ export default () => <Palette data={colorsData} />;
 
 ```jsx
 import React from 'react';
-import { Palette, createColorData } from 'rc-component';
+import { Palette, createColorData } from '@leslies/rc-component';
 import { lime } from '@leslies/css';
 
 const colorKey = 'lime';
@@ -86,7 +86,7 @@ export default () => <Palette data={colorsData} />;
 
 ```jsx
 import React from 'react';
-import { Palette, createColorData } from 'rc-component';
+import { Palette, createColorData } from '@leslies/rc-component';
 import { green } from '@leslies/css';
 
 const colorKey = 'green';
@@ -100,7 +100,7 @@ export default () => <Palette data={colorsData} />;
 
 ```jsx
 import React from 'react';
-import { Palette, createColorData } from 'rc-component';
+import { Palette, createColorData } from '@leslies/rc-component';
 import { cyan } from '@leslies/css';
 
 const colorKey = 'cyan';
@@ -114,7 +114,7 @@ export default () => <Palette data={colorsData} />;
 
 ```jsx
 import React from 'react';
-import { Palette, createColorData } from 'rc-component';
+import { Palette, createColorData } from '@leslies/rc-component';
 import { blue } from '@leslies/css';
 
 const colorKey = 'blue';
@@ -128,7 +128,7 @@ export default () => <Palette data={colorsData} />;
 
 ```jsx
 import React from 'react';
-import { Palette, createColorData } from 'rc-component';
+import { Palette, createColorData } from '@leslies/rc-component';
 import { geekblue } from '@leslies/css';
 
 const colorKey = 'geekblue';
@@ -142,7 +142,7 @@ export default () => <Palette data={colorsData} />;
 
 ```jsx
 import React from 'react';
-import { Palette, createColorData } from 'rc-component';
+import { Palette, createColorData } from '@leslies/rc-component';
 import { purple } from '@leslies/css';
 
 const colorKey = 'purple';
@@ -156,7 +156,7 @@ export default () => <Palette data={colorsData} />;
 
 ```jsx
 import React from 'react';
-import { Palette, createColorData } from 'rc-component';
+import { Palette, createColorData } from '@leslies/rc-component';
 import { magenta } from '@leslies/css';
 
 const colorKey = 'magenta';

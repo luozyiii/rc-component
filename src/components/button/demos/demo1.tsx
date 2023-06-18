@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from 'rc-component';
+import { Button } from '@leslies/rc-component';
 
 export default () => (
   <>

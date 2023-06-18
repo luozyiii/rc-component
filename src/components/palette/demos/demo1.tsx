@@ -1,5 +1,5 @@
 import React from 'react';
-import { Palette } from 'rc-component';
+import { Palette } from '@leslies/rc-component';
 
 export default () => (
   <Palette

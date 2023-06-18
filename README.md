@@ -1,7 +1,7 @@
-# rc-component
+# @leslies/rc-component
 
-[![NPM version](https://img.shields.io/npm/v/rc-component.svg?style=flat)](https://npmjs.org/package/rc-component)
-[![NPM downloads](http://img.shields.io/npm/dm/rc-component.svg?style=flat)](https://npmjs.org/package/rc-component)
+[![NPM version](https://img.shields.io/npm/v/@leslies/rc-component.svg?style=flat)](https://npmjs.org/package/@leslies/rc-component)
+[![NPM downloads](http://img.shields.io/npm/dm/@leslies/rc-component.svg?style=flat)](https://npmjs.org/package/@leslies/rc-component)
 
 A react library developed with dumi
 
@@ -29,7 +29,7 @@ npm publish --registry http://localhost:4873
 # 撤销
 npm unpublish --registry http://localhost:4873 --force
 # 强制撤销指定版本
-npm unpublish rc-component@0.0.1 --registry http://localhost:4873 --force
+npm unpublish @leslies/rc-component@0.0.1 --registry http://localhost:4873 --force
 ```
 
 ## Development
