@@ -8,11 +8,13 @@ export interface ColorProps extends React.HTMLAttributes<HTMLElement> {
   style?: React.CSSProperties;
 }
 
+const classPrefix = `rc-palette`;
+
 export const Color: FC<ColorProps> = (props) => {
   const { className, style, data, ...other } = props;
 
   const cls = classnames({
-    'rc-palette-color': true,
+    [`${classPrefix}-color`]: true,
     [className as string]: !!className,
   });
 

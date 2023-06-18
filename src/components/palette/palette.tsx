@@ -8,11 +8,12 @@ export interface PaletteProps extends React.HTMLAttributes<HTMLElement> {
   style?: React.CSSProperties;
 }
 
+const classPrefix = `rc-palette`;
+
 export const Palette: FC<PaletteProps> = (props) => {
   const { className, style, data, ...other } = props;
 
-  const cls = classnames({
-    'rc-palette': true,
+  const cls = classnames(classPrefix, {
     [className as string]: !!className,
   });
 

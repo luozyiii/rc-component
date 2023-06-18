@@ -43,7 +43,7 @@ export default () => {
         </Button>
       </Space>
       <h4>block 示例</h4>
-      <Button block>default</Button>
+      <Button block>Block Button</Button>
       <h4>click 示例</h4>
       <Button type="primary" onClick={onClick}>
         点击一下

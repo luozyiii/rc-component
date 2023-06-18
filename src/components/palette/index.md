@@ -16,4 +16,10 @@ nav:
 
 <code src="./demos/demo1.tsx"></code>
 
-<code src="./demos/demo2.tsx"></code>
+## 属性
+
+| 属性      | 说明             | 类型                          | 默认值 |
+| --------- | ---------------- | ----------------------------- | ------ |
+| className | 语义化结构 class | -                             | -      |
+| style     | 语义化结构 style | -                             | -      |
+| data      | 数据             | `{name: 'red', value: red}[]` | -      |
