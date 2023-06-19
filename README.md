@@ -34,12 +34,12 @@ $btn-prefix: '.rc-btn';
 
 ```bash
 # 部署 verdaccio 私域 npm
-npm publish --registry http://localhost:4873
+npm publish --registry http://81.71.98.176:4873
 
 # 撤销
-npm unpublish --registry http://localhost:4873 --force
+npm unpublish --registry http://81.71.98.176:4873 --force
 # 强制撤销指定版本
-npm unpublish @leslies/rc-component@0.0.1 --registry http://localhost:4873 --force
+npm unpublish @leslies/rc-component@0.0.1 --registry http://81.71.98.176:4873 --force
 ```
 
 ## Development
@@ -73,6 +73,3 @@ $ npm run doctor
 ## LICENSE
 
 MIT
-
-npm publish --registry http://localhost:4873
-npm unpublish --registry http://localhost:4873 --force
