@@ -1,0 +1,24 @@
+import React, { type FC } from 'react';
+import classnames from 'classnames';
+import './style.scss';
+
+export interface {{componentName}}Props extends React.HTMLAttributes<HTMLElement> {
+  children: React.ReactNode;
+  className?: string;
+}
+
+const classPrefix = `rc-{{dirName}}`;
+
+export const {{componentName}}: FC<{{componentName}}Props> = (props) => {
+  const { className, children, ...other } = props;
+
+  const cls = classnames(classPrefix, {
+    [className as string]: !!className,
+  });
+
+  return (
+    <div {...other} className={cls}>
+      {children}
+    </div>
+  );
+};

@@ -14,5 +14,11 @@
   "aiXcoder.showTrayIcon": true,
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.associations": {
+    "*.hbs": "html"
+  },
+  "[html]": {
+    "editor.formatOnSave": false
   }
 }

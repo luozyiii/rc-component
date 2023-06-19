@@ -9,6 +9,7 @@
     "dist"
   ],
   "scripts": {
+    "add": "node script/add.js",
     "build": "father build",
     "build:watch": "father dev",
     "deploy": "gh-pages -d docs-dist",
@@ -61,6 +62,7 @@
     "father": "^4.1.0",
     "gh-pages": "^5.0.0",
     "glob": "^10.2.7",
+    "handlebars": "^4.7.7",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "node-sass": "^9.0.0",

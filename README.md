@@ -20,14 +20,14 @@ npm run docs:build
 npm run deploy
 ```
 
-## 标准
+## 组件开发
 
-### 样式命名
+```bash
+# 组件名 小写
+npm run add [组件名]
 
-- 前缀 【.rc-】
-
-```scss
-$btn-prefix: '.rc-btn';
+# 最后在 src/index.ts 增加组件的引用
+export { default as Space } from './components/space';
 ```
 
 ## publish 发布
