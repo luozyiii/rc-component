@@ -3,6 +3,7 @@ $btn-prefix: '.rc-btn';
 #{$btn-prefix} {
   display: flex;
   align-items: center;
+  justify-content: center;
   font-weight: 400;
   white-space: nowrap;
   text-align: center;
@@ -25,7 +26,6 @@ $btn-prefix: '.rc-btn';
   background: var(--fill-4);
 
   &-block {
-    display: block;
     width: 100%;
   }
 
@@ -79,6 +79,20 @@ $btn-prefix: '.rc-btn';
     border-color: var(--line-3);
     background: var(--fill-4);
     border-style: dashed;
+  }
+
+  &-danger {
+    color: var(--fill-4);
+    border-color: var(--danger-1);
+    background: var(--danger-1);
+    text-shadow: var(--line-1);
+
+    &-loading {
+      border: 2px solid var(--fill-4);
+      border-top-color: var(--line-1);
+      border-right-color: var(--line-1);
+      border-bottom-color: var(--line-1);
+    }
   }
 
   &-text {

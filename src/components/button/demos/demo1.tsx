@@ -12,6 +12,7 @@ export default () => {
       <Space>
         <Button>default</Button>
         <Button type="primary">primary</Button>
+        <Button type="danger">danger</Button>
         <Button type="dashed">dashed</Button>
         <Button type="link">link</Button>
         <Button type="text">text</Button>
@@ -26,11 +27,16 @@ export default () => {
           small
         </Button>
       </Space>
+      <h4>block 示例</h4>
+      <Button block>Block Button</Button>
       <h4>loading 示例</h4>
       <Space>
         <Button loading>default</Button>
         <Button loading type="primary">
           primary
+        </Button>
+        <Button loading type="danger">
+          danger
         </Button>
         <Button loading type="dashed">
           dashed
@@ -42,8 +48,9 @@ export default () => {
           text
         </Button>
       </Space>
-      <h4>block 示例</h4>
-      <Button block>Block Button</Button>
+      <Button loading block>
+        Block Button
+      </Button>
       <h4>click 示例</h4>
       <Button type="primary" onClick={onClick}>
         点击一下

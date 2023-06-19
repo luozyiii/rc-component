@@ -5,7 +5,7 @@ import './style.scss';
 export interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
   className?: string;
-  type?: 'primary' | 'dashed' | 'link' | 'text' | 'default';
+  type?: 'primary' | 'dashed' | 'link' | 'text' | 'danger' | 'default';
   size?: 'small' | 'medium' | 'large';
   style?: React.CSSProperties;
   loading?: boolean;
