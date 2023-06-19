@@ -3,7 +3,7 @@ import classnames from 'classnames';
 import './style.scss';
 
 export interface SpaceProps extends React.HTMLAttributes<HTMLElement> {
-  children: React.ReactNode;
+  children: React.ReactNode[];
   direction?: 'horizontal' | 'vertical';
   size?: number;
   wrap?: boolean;
@@ -22,13 +22,13 @@ export const Space: FC<SpaceProps> = (props) => {
   return (
     <ul className={cls}>
       {React.Children.map(children, (child, index) => {
+        const len = children?.length;
         return (
           <li
             key={index}
             style={{
-              marginLeft: size / 2 + 'px',
-              marginRight: size / 2 + 'px',
-              marginBottom: size + 'px',
+              marginRight: len !== index + 1 ? size : 0 + 'px',
+              marginBottom: len !== index + 1 ? size : 0 + 'px',
             }}
           >
             {child}
