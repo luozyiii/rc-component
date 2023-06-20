@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "add": "node script/add.js",
-    "build": "father build",
+    "build": "npm run test && father build",
     "build:watch": "father dev",
     "deploy": "gh-pages -d docs-dist",
     "dev": "dumi dev",
@@ -20,8 +20,9 @@
     "lint:css": "stylelint \"{src,test}/**/*.{css,less}\"",
     "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
     "prepare": "husky install && dumi setup",
-    "prepublishOnly": "father doctor && npm run build",
+    "prepublishOnly": "&&father doctor && npm run build",
     "start": "npm run dev",
+    "test": "jest",
     "theme": "node script/variable.js "
   },
   "commitlint": {
@@ -46,11 +47,24 @@
       "prettier --parser=typescript --write"
     ]
   },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css|scss)$": "<rootDir>/__mocks__/styleMock.js"
+    },
+    "preset": "ts-jest",
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-dom/extend-expect"
+    ],
+    "testEnvironment": "jsdom"
+  },
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
     "@ctrl/tinycolor": "^3.6.0",
     "@leslies/css": "^0.0.1",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "@types/jest": "^29.5.2",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "@umijs/lint": "^4.0.0",
@@ -65,6 +79,8 @@
     "glob": "^10.2.7",
     "handlebars": "^4.7.7",
     "husky": "^8.0.1",
+    "jest": "^29.5.0",
+    "jest-environment-jsdom": "^29.5.0",
     "lint-staged": "^13.0.3",
     "node-sass": "^9.0.0",
     "prettier": "^2.7.1",
@@ -72,7 +88,8 @@
     "prettier-plugin-packagejson": "^2.2.18",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "stylelint": "^14.9.1"
+    "stylelint": "^14.9.1",
+    "ts-jest": "^29.1.0"
   },
   "peerDependencies": {
     "@leslies/css": "^0.0.1",

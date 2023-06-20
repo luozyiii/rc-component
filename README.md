@@ -30,6 +30,54 @@ npm run add [组件名]
 export { default as Space } from './components/space';
 ```
 
+## 组件自动化测试(Jest)
+
+### 基础
+
+#### 1、安装依赖
+
+```bash
+npm install --save-dev jest ts-jest @types/jest @testing-library/react @testing-library/jest-dom
+```
+
+#### 2、在项目根目录下创建一个 tsconfig.json 文件，并添加以下配置：
+
+```json
+{
+  "compilerOptions": {
+    "jsx": "react"
+  }
+}
+```
+
+#### 3、在 Jest 的配置文件中（通常是 jest.config.js 或 package.json 中的 jest 字段）添加以下配置：
+
+```json
+{
+  "preset": "ts-jest",
+  "testEnvironment": "jsdom",
+  "setupFilesAfterEnv": ["@testing-library/jest-dom/extend-expect"]
+}
+```
+
+### scss 支持
+
+#### 1、在 Jest 的配置文件中（通常是 jest.config.js 或 package.json 中的 jest 字段）添加以下配置：
+
+```json
+{
+  "moduleNameMapper": {
+    "\\.(css|scss)$": "<rootDir>/__mocks__/styleMock.js"
+  }
+}
+```
+
+#### 2、在项目根目录下创建一个 **mocks** 目录，并创建一个 styleMock.js 文件，添加以下代码：
+
+```js
+module.exports = {};
+```
+
 ## publish 发布
 
 ```bash

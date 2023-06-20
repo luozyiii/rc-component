@@ -1,0 +1,14 @@
+import React from 'react';
+import { render } from '@testing-library/react';
+import '@testing-library/jest-dom';
+import {{componentName}} from '.';
+
+// TODO
+describe('{{componentName}} component', () => {
+  // 组件渲染
+  test('renders {{dirName}} with document', () => {
+    const { getByText } = render(<{{componentName}}>Click me</{{componentName}}>);
+    const {{dirName}} = getByText('Click me');
+    expect({{dirName}}).toBeInTheDocument();
+  });
+});
