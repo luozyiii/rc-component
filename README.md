@@ -1,9 +1,35 @@
 # @leslies/rc-component
 
-[![NPM version](https://img.shields.io/npm/v/@leslies/rc-component.svg?style=flat)](https://npmjs.org/package/@leslies/rc-component)
-[![NPM downloads](http://img.shields.io/npm/dm/@leslies/rc-component.svg?style=flat)](https://npmjs.org/package/@leslies/rc-component)
+基于 React 18 的移动端组件库
 
-A react library developed with dumi
+## 开发
+
+```bash
+# 安装依赖
+npm install
+
+# 启动
+npm start
+
+# 构建打包
+npm run build
+
+# 构建打包 in watch mode
+npm run build:watch
+
+# 检查您的项目是否存在潜在问题
+npm run doctor
+```
+
+## 组件开发
+
+```bash
+# 组件名 小写
+npm run add [组件名]
+
+# 最后在 src/index.ts 增加组件的引用
+export { default as Space } from './components/space';
+```
 
 ## Docs 文档
 
@@ -20,17 +46,19 @@ npm run docs:build
 npm run deploy
 ```
 
-## 组件开发
+## publish 发布
 
 ```bash
-# 组件名 小写
-npm run add [组件名]
+# 部署 verdaccio 私域 npm
+npm publish --registry http://81.71.98.176:4873
 
-# 最后在 src/index.ts 增加组件的引用
-export { default as Space } from './components/space';
+# 撤销
+npm unpublish --registry http://81.71.98.176:4873 --force
+# 强制撤销指定版本
+npm unpublish @leslies/rc-component@0.0.1 --registry http://81.71.98.176:4873 --force
 ```
 
-## 组件自动化测试(Jest)
+## 组件单元测试(Jest + @testing-library/react)
 
 ### 基础
 
@@ -76,40 +104,6 @@ npm install --save-dev jest ts-jest @types/jest @testing-library/react @testing-
 
 ```js
 module.exports = {};
-```
-
-## publish 发布
-
-```bash
-# 部署 verdaccio 私域 npm
-npm publish --registry http://81.71.98.176:4873
-
-# 撤销
-npm unpublish --registry http://81.71.98.176:4873 --force
-# 强制撤销指定版本
-npm unpublish @leslies/rc-component@0.0.1 --registry http://81.71.98.176:4873 --force
-```
-
-## Development
-
-```bash
-# install dependencies
-$ npm install
-
-# develop library by docs demo
-$ npm start
-
-# build library source code
-$ npm run build
-
-# build library source code in watch mode
-$ npm run build:watch
-
-# build docs
-$ npm run docs:build
-
-# check your project for potential problems
-$ npm run doctor
 ```
 
 ## Link 参考

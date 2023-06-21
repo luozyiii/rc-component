@@ -8,7 +8,7 @@ export default defineConfig({
     atomDirs: [{ type: 'component', dir: 'src/components' }],
   },
   themeConfig: {
-    name: 'UI库',
+    name: 'React UI',
     footer: 'Powered by 924361501@qq.com',
     // 配置高清方案，默认为 750 高清方案
     hd: {

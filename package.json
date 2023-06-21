@@ -1,7 +1,7 @@
 {
   "name": "@leslies/rc-component",
   "version": "0.0.1",
-  "description": "A react library developed with dumi",
+  "description": "基于 React 18 的移动端组件库",
   "license": "MIT",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",

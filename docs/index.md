@@ -1,22 +1,16 @@
 ---
 hero:
-  title: library
-  description: A react library developed with dumi
-  actions:
-    - text: Hello
-      link: /
-    - text: World
-      link: /
-features:
-  - title: Hello
-    emoji: 💎
-    description: Put hello description here
-  - title: World
-    emoji: 🌈
-    description: Put world description here
-  - title: '!'
-    emoji: 🚀
-    description: Put ! description here
----
+  title: React UI
+  description: 基于 React 18 的移动端组件库
 
-@leslies/rc-component
+features:
+  - title: Dumi 2.0
+    emoji: 🚀
+    description: 组件构建及组件文档生成
+  - title: React 18
+    emoji: 🌈
+    description: 最新特性
+  - title: Jest 29 + @testing-library/react
+    emoji: 💎
+    description: 单元测试
+---
