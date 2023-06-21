@@ -29,14 +29,46 @@ $palette-prefix: '.rc-palette';
     flex-wrap: wrap;
     li {
       flex-basis: 25%;
+      padding-top: 12px;
       margin-bottom: 12px;
       text-align: center;
+      position: relative;
       .circle {
         width: 32px;
         height: 32px;
         border-radius: 50%;
         margin: 0 auto 6px;
         border: 1px solid var(--line-2);
+      }
+      .tool-tip {
+        position: absolute;
+        top: -18px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: none;
+        font-size: 14px;
+        color: var(--fill-1);
+        background-color: var(--fill-5);
+        padding: 2px 4px;
+        border-radius: 2px;
+        &::before {
+          position: absolute;
+          bottom: -8px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 0;
+          height: 0;
+          content: '';
+          border-top: 4px solid var(--fill-5);
+          border-right: 4px solid transparent;
+          border-bottom: 4px solid transparent;
+          border-left: 4px solid transparent;
+        }
+      }
+      &:hover {
+        .tool-tip {
+          display: inline-block;
+        }
       }
     }
   }
