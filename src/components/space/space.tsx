@@ -27,7 +27,10 @@ export const Space: FC<SpaceProps> = (props) => {
           <li
             key={index}
             style={{
-              marginRight: len !== index + 1 ? size : 0 + 'px',
+              marginRight:
+                len !== index + 1 && direction === 'horizontal'
+                  ? size
+                  : 0 + 'px',
               marginBottom: len !== index + 1 ? size : 0 + 'px',
             }}
           >
