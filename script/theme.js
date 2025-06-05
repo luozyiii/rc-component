@@ -1,6 +1,6 @@
 // css 变量生成脚本
 const fs = require('fs');
-const sass = require('node-sass');
+const sass = require('sass');
 
 const themeObj = {};
 
